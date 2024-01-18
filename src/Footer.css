@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+.foot-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.foot-name {
+    margin-left: auto;
+    font-family: Roboto;
+}
+
+.foot-name h5 {
+    font-weight: 600;
+}
+
+.foot-name span {
+    padding: 0 5px;
+}

@@ -1,0 +1,173 @@
+.Shades {
+    height: 100vh;
+    color: rgb(0, 0, 0);
+}
+
+
+.Shades-colors {
+
+    height: 90%;
+}
+
+.Shades-box {
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Shades-descr {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+    padding-top: 30px;
+}
+
+.Shades .copy-btn {
+    margin-left: 10px;
+    margin-top: 145px;
+}
+
+.copy-container button {
+    opacity: 0;
+}
+
+.Shades-box:hover .copy-container button {
+    opacity: 1;
+    background-color: rgba(240, 248, 255, 0.644);
+    border: none;
+    width: auto;
+    align-self: center;
+    height: 40px;
+    padding: 0px 20px;
+    color: rgb(238, 241, 244);
+    transition: 0.3s;
+}
+
+
+.Shades-name {
+    text-transform: uppercase;
+    padding-left: 5px;
+
+
+}
+
+.Shades-back {
+    background-color: rgba(240, 248, 255, 0.644);
+    border: none;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0px 20px;
+    color: rgb(238, 241, 244);
+    position: absolute;
+    top: 255px;
+    left: 75px;
+    cursor: pointer;
+
+}
+
+.copy-overlay {
+    opacity: 0;
+    z-index: 0;
+    width: 90%;
+    height: 90%;
+    transform: scale(0.1);
+
+
+}
+
+.copy-overlay.show {
+    opacity: 1;
+    transform: scale(50);
+    z-index: 10;
+    position: absolute;
+
+}
+
+.copied {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40%;
+    color: rgb(40, 41, 42);
+    letter-spacing: 3px;
+    transform: scale(0.5);
+    opacity: 0;
+
+}
+
+.copied.show {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+    z-index: 10;
+    transition-delay: 0.3s;
+    width: 100%;
+
+
+}
+
+.copied.show h1 {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.697);
+    text-shadow: 2px 2px 0px rgb(253, 253, 253);
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.copied.show span {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.slider {
+    width: 340px;
+    margin: 5px 10px;
+    display: flex;
+}
+
+.rc-slider-track {
+    background-color: transparent;
+}
+
+.rc-slider-rail {
+    height: 8px;
+}
+
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus,
+.rc-slider-handle:hover {
+    background-color: green;
+    outline: none;
+    border: 2px solid green;
+    box-shadow: none;
+    width: 13px;
+    height: 13px;
+    margin-top: -2px;
+
+}
+
+@media screen and (max-width: 992px) {
+    .copied.show {
+        width: 25%;
+        margin-top: 25%;
+
+    }
+
+
+}

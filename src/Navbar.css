@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+
+.logo {
+    background-color: rgb(185, 196, 206);
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(13, 13, 14);
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.slider-level {
+    display: flex;
+    padding-left: 10px;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.slider {
+    width: 340px;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc-slider-track {
+    background-color: transparent;
+}
+
+.rc-slider-rail {
+    height: 8px;
+}
+
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus,
+.rc-slider-handle:hover {
+    background-color: green;
+    outline: none;
+    border: 2px solid green;
+    box-shadow: none;
+    width: 13px;
+    height: 13px;
+    margin-top: -2px;
+
+}
+
+.select {
+    height: 30px;
+    color: black;
+
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1em;
+}

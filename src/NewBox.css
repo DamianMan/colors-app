@@ -1,0 +1,7 @@
+.NewBox-main:hover .NewBox-delete {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    transform: scale(1.5);
+    color: #ffff
+}
